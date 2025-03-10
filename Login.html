@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0; 
+            padding: 0;
+            font-family: Arial, sans-serif; 
+            background-color: #D98324; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+        h1 {
+            text-align: center;
+            color: #333; 
+        }
+        img {
+            display: block; 
+            margin: 0 auto; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px; 
+            justify-content: center;
+            align-items: center;
+            background-color: #EFDCAB; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            width: 300px; 
+        }
+        label, input {
+            margin: 5px 0; 
+            text-align: left;
+        }
+        input {
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+        .button-container {
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%; 
+        }
+        button {
+            padding: 10px; 
+            background-color: rgb(255, 255, 255);
+            border: none; 
+            color: black;
+            cursor: pointer; 
+            margin: 5px 0; 
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+            transition: background-color 0.3s; 
+            flex: 1; 
+            margin-right: 5px; 
+        }
+        button:last-child {
+            margin-right: 0; 
+        }
+        button:hover {
+            background-color: rgb(0, 200, 200);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Assets/book.png" alt="Logo buku" width="100px" height="100px">
+    <h1>KatalisIlmu</h1>
+    <form action="/login" method="POST">
+        <label for="username">ID Pengguna</label>
+        <input type="text" id="username" name="username" placeholder="Masukkan ID Pengguna" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+        
+        <div class="button-container">
+            <button type="submit">Masuk</button>
+            <button type="button" onclick="window.location.href='/register'">Daftar</button> 
+        </div>
+    </form>
+</body>
+
+</html>
