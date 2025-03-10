@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <style>
+        body {
+            background-color: #D98324;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+
+        h1 {
+            color: #000000;
+            margin-left: 10px;
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .logout-button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-button:hover {
+            background-color: rgb(206, 202, 202);
+        }
+
+        .main-container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .container {
+            display: block;
+            flex-shrink: 0;
+            background-color: white;
+            border-radius: 15px;
+            width: 85px;
+        }
+
+        .btn {
+            display: block;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .btn img {
+            margin-bottom: 5px;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .btn p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .note {
+            padding-left: 200px;
+            text-align: center;
+        }
+
+        .note h1,
+        .note h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div style="display: flex; align-items: center;">
+            <img src="Assets/book.png" alt="Logo buku">
+            <h1>KatalisIlmu</h1>
+        </div>
+        <button class="logout-button" onclick="window.location.href='Login.html'">Keluar</button>
+    </div>
+    <div class="main-container">
+        <div class="container">
+            <div class="btn" onclick="window.location.href='/profile'">
+                <img src="Assets/profil.png" alt="Profil">
+                <p>Profil</p>
+            </div>
+            <div class="btn" onclick="window.location.href='/library'">
+                <img src="Assets/pustaka.png" alt="Pustaka">
+                <p>Pustaka</p>
+            </div>
+            <div class="btn" onclick="window.location.href='/return'">
+                <img src="Assets/kembalikan.png" alt="Kembalikan">
+                <p>Kembali</p>
+            </div>
+            <div class="btn" onclick="window.location.href='/history'">
+                <img src="Assets/riwayat.png" alt="Riwayat">
+                <p>Riwayat</p>
+            </div>
+            <div class="btn" onclick="window.location.href='/help'">
+                <img src="Assets/bantuan.png" alt="Bantuan">
+                <p>Bantuan</p>
+            </div>
+        </div>
+        <div class="note">
+            <h1>Selamat Datang di KatalisIlmu...!!!</h1>
+            <p style="color: #f0f0f0;">Temukan, Pinjam, dan Kembalikan Buku dengan Mudah!</p>
+            <p style="padding-top: 250px;">Mari Mulai Petualangan Membaca Anda! Jangan lewatkan kesempatan untuk
+                menyelami cerita-cerita menarik dan memperluas wawasan Anda. Pilihlah buku favorit Anda dan mulailah
+                petualangan membaca yang tak terlupakan!</p>
+        </div>
+    </div>
+</body>
+
+</html>
